@@ -3,7 +3,7 @@ SETUP AND CONFIGURATION OF OPENVPN SERVER ON A CENTOS 7.3 CLUSTER
 ===================
 ## Cluster configuration
 We had a cluster of five centos instances belonging to the same sub-network (i.e. CIDR 192.168.0.0/24). 
-![Centos cluster](instances)
+![Centos cluster](./instances.png)
 
 Moreover, we need the root access to the openvpn server and configure the cluster network in the way to open the ports 22 (for ssh) and 443 (for openvpn). 
 
