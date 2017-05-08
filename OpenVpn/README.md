@@ -114,9 +114,9 @@ In the client machine at the same path of the above files create the file *clien
 
 Some iptables rules are needed to enable internet on the client machine:
 
-     iptables -A POSTROUTING -j MASQUERADE
+     iptables -t nat -A POSTROUTING -j MASQUERADE
 
-The above rule is not permanently added.  Re
+The above rule is not permanently added. Therefore, each time the machine is rebooted you must redo this instruction.
      
 Finally,  edit systctl.conf to enable packet forwarding. Open the file */etc/sysctl.conf* and add the following line:
 
