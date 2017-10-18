@@ -118,7 +118,7 @@ Some iptables rules are needed on the vpn server to enable routing:
 
 The above rule is not permanently added. Therefore, each time the machine is rebooted you must redo this instruction.
 
-**Note** This [link](https://docs.openvpn.net/troubleshooting/troubleshooting-reaching-systems-over-the-vpn-tunnel/) is an interesting tutorial about how check routing problems.
+**Note** This [link](https://docs.openvpn.net/troubleshooting/troubleshooting-reaching-systems-over-the-vpn-tunnel/) is an interesting tutorial about how to check routing problems.
      
 Finally,  edit systctl.conf to enable packet forwarding. Open the file */etc/sysctl.conf* and add the following line:
 
