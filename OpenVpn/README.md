@@ -117,6 +117,8 @@ Some iptables rules are needed on the vpn server to enable routing:
      iptables -t nat -o eth0 -A POSTROUTING -j MASQUERADE
 
 The above rule is not permanently added. Therefore, each time the machine is rebooted you must redo this instruction.
+
+**Note** This [link](https://docs.openvpn.net/troubleshooting/troubleshooting-reaching-systems-over-the-vpn-tunnel/) is an interesting tutorial about how check routing problems.
      
 Finally,  edit systctl.conf to enable packet forwarding. Open the file */etc/sysctl.conf* and add the following line:
 
@@ -136,3 +138,4 @@ Then, run:
 [2] https://community.openvpn.net/openvpn/wiki/BridgingAndRouting 
 [3] https://www.digitalocean.com/community/tutorials/how-to-setup-and-configure-an-openvpn-server-on-centos-6
 [4] https://www.vpsserver.com/community/tutorials/7/setup-and-configuration-of-openvpn-server-on-centos-7-2/
+[5] https://docs.openvpn.net/troubleshooting/troubleshooting-reaching-systems-over-the-vpn-tunnel/
