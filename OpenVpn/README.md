@@ -112,7 +112,7 @@ In the client machine at the same path of the above files create the file *clien
 
 ## Routing & Forwarding rules
 
-Some iptables rules are needed to enable internet on the client machine:
+Some iptables rules are needed on the vpn server to enable routing:
 
      iptables -t nat -o eth0 -A POSTROUTING -j MASQUERADE
 
