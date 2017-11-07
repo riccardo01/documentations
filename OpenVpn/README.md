@@ -30,6 +30,7 @@ The first step consists to install the [EPEL Repo](https://fedoraproject.org/wik
     
 ## Initial OpenVPN Configuration
 Copy the certificate generation scripts from their default location to our OpenVPN folder.
+
     $ mkdir /etc/openvpn/easy-rsa
     $ cp -rf /usr/share/easy-rsa/2.0/* /etc/openvpn/easy-rsa
     
